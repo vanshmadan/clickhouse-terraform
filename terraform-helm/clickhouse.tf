@@ -5,13 +5,7 @@ resource "helm_release" "clickhouse" {
   namespace  = "test"
   version    =  "1.0"
 
-  set {
-    name  = "defaultStorageClassName"
-    value = "standard"
-  }
-
-  set {
-    name  = "defaultStorageResourceRequest"
-    value = "1Gi"
-  }  
+  values = [
+   "${file("${path.module}/values.yaml")}"  ## Required only if different values.yaml file is created
+   ]
 }
