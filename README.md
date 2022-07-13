@@ -19,8 +19,13 @@ brew install hashicorp/tap/terraform
 ```
 
 ## Installtion using terraform
+
+1) change directory and modify the parameter values in the `values.yaml`.
 ```bash
-cd clickhouse-terraform
+cd clickhouse-helm-terraform
+```
+2) Run below tf commands
+```bash
 terraform init
 terraform plan
 terraform apply
