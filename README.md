@@ -30,3 +30,11 @@ If you need to customize many parameters, you can modify [values.yaml](../clickh
 $ helm install --generate-name <repoName>/clickhouse-cluster -n <nameSpace>\
   -f /<path>/to/values.yaml
 ```
+
+## Verfication
+``` bash
+kubectl get pods -n test
+```
+
+<img width="829" alt="image" src="https://user-images.githubusercontent.com/31353777/178678942-020fae74-b8e3-42ab-bf9c-4bd00d852812.png">
+
