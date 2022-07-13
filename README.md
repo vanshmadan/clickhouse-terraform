@@ -18,7 +18,15 @@ brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
 ```
 
-## Custom Configuration
+## Installtion using terraform
+```bash
+cd clickhouse-terraform
+terraform init
+terraform plan
+terraform apply
+```
+
+## Manual Installtion
 
 If you need to customize many parameters, you can modify [values.yaml](../clickhouse-cluster-helm/values.yaml).
 
@@ -30,6 +38,7 @@ If you need to customize many parameters, you can modify [values.yaml](../clickh
 $ helm install --generate-name <repoName>/clickhouse-cluster -n <nameSpace>\
   -f /<path>/to/values.yaml
 ```
+
 
 ## Verfication
 ``` bash
