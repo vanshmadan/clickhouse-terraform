@@ -73,7 +73,7 @@ chi-ClickHouse-replicas-0-0-0
 
 <img width="829" alt="image" src="https://user-images.githubusercontent.com/31353777/178678942-020fae74-b8e3-42ab-bf9c-4bd00d852812.png">
 
-Port forward:
+To expose service using port forward:
 ```bash
 kubectl port-forward --address 0.0.0.0 --namespace test svc/clickhouse-cluster-s0-r0 8123:8123 
 ```
