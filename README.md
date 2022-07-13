@@ -106,7 +106,9 @@ Connect superset with clickhouse
 1) Within Superset, select Data from the top menu and then Databases from the drop-down menu. Add a new database by clicking the + Database button:
 2) In the first step, select ClickHouse Connect as the type of database
 3) Add DB details like host,port,name,password and click on connect
-4)
+4) To interact with your ClickHouse data with Superset, you need to define a dataset. From the top menu in Superset, select Data, then Datasets from the drop-down menu.
+
+
 <img width="703" alt="image" src="https://user-images.githubusercontent.com/31353777/178709810-1414db6c-00ee-48e4-a24a-1175a85e31ca.png">
 <img width="499" alt="image" src="https://user-images.githubusercontent.com/31353777/178709895-adbc97c4-2f51-4699-9905-2f033357f1bc.png">
 <img width="709" alt="image" src="https://user-images.githubusercontent.com/31353777/178709928-c3ab7e2e-6c44-4353-a276-3fabea1e3187.png">
