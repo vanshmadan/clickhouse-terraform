@@ -96,4 +96,15 @@ $ kubectl get pods -n test | grep superset
 ```
 <img width="739" alt="image" src="https://user-images.githubusercontent.com/31353777/178700418-3f965303-7e85-4f35-9ff4-2888751658bd.png">
 
+4) To expose service
+```bash
+kubectl port-forward superset-xxxx-yyyy :8088 
+```
+
+Connect superset with clickhouse
+
+1) Within Superset, select Data from the top menu and then Databases from the drop-down menu. Add a new database by clicking the + Database button:
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d717fc87-3b02-4e77-ac8e-69720cd0b0fb/Untitled.png)
+
 
