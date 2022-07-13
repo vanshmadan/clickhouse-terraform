@@ -12,6 +12,11 @@ sudo install minikube-darwin-arm64 /usr/local/bin/minikube
 minikube start --driver=docker
 ```
 
+## Install Terraform
+```bash
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
+```
 
 ## Custom Configuration
 
@@ -24,10 +29,4 @@ If you need to customize many parameters, you can modify [values.yaml](../clickh
 ```bash
 $ helm install --generate-name <repoName>/clickhouse-cluster -n <nameSpace>\
   -f /<path>/to/values.yaml
-```
-
-## 
-```bash
-brew tap hashicorp/tap
-brew install hashicorp/tap/terraform
 ```
