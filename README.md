@@ -1,9 +1,15 @@
 ## Prerequisite
 
 ## Quick start with minikube
+
+1) Download minikube
 ```bash
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-arm64
 sudo install minikube-darwin-arm64 /usr/local/bin/minikube
+```
+2)Start minikube
+```bash
+minikube start --driver=docker
 ```
 
 
