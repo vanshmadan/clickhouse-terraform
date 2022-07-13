@@ -80,7 +80,7 @@ kubectl port-forward --address 0.0.0.0 --namespace test svc/clickhouse-cluster-s
 
 ## Superset
 
-1) change directory and modify the parameter values in the `values.yaml`.
+1) Change directory and modify the parameter values in the `values.yaml`.
 ```bash
 cd superset
 ```
