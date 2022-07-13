@@ -84,7 +84,16 @@ Superset
 ```bash
 cd superset
 ```
-
+2) Run below tf commands
+```bash
+terraform init
+terraform plan
+terraform apply
+```
+3) ## Verfication
+```bash
+$ kubectl get pods -n test | grep superset
+```
 <img width="739" alt="image" src="https://user-images.githubusercontent.com/31353777/178700418-3f965303-7e85-4f35-9ff4-2888751658bd.png">
 
 
