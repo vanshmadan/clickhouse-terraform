@@ -4,6 +4,7 @@ resource "helm_release" "clickhouse" {
   name       = "clickhouse-cluster"
   namespace  = "test"
   version    =  "1.0"
+  wait       = false
 
   values = [
    "${file("${path.module}/values.yaml")}"  ## Required only if different values.yaml file is created
