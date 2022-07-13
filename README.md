@@ -30,6 +30,11 @@ terraform init
 terraform plan
 terraform apply
 ```
+For persistent storage configuration, add below values in values.yaml
+```bash
+ defaultStorageClassName: standard
+ defaultStorageResourceRequest: 10Gi
+```
 
 ## Manual Installtion
 
