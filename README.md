@@ -101,7 +101,7 @@ $ kubectl get pods -n test | grep superset
 kubectl port-forward superset-xxxx-yyyy :8088 
 ```
 
-Connect superset with clickhouse
+## Connect superset with clickhouse
 
 1) Within Superset, select Data from the top menu and then Databases from the drop-down menu. Add a new database by clicking the + Database button:
 2) In the first step, select ClickHouse Connect as the type of database
