@@ -63,6 +63,7 @@ $ kubectl get pods | grep clickhouse
 clickHouse-replicas-0-0-0   1/1     Running   0          32m50s
 clickHouse-replicas-0-1-0   1/1     Running   0          32m50s
 
+```
 $ kubectl exec -it chi-ClickHouse-replicas-0-0-0 -- clickhouse-client -u clickhouse --password=c1ickh0use0perator --query='select hostName()'
 chi-ClickHouse-replicas-0-0-0
 ```
