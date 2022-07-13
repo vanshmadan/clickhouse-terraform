@@ -92,13 +92,13 @@ terraform apply
 ```
 3) ## Verfication
 ```bash
-$ kubectl get pods -n test | grep superset
+$ kubectl get pods | grep superset
 ```
 <img width="739" alt="image" src="https://user-images.githubusercontent.com/31353777/178700418-3f965303-7e85-4f35-9ff4-2888751658bd.png">
 
 4) To expose service
 ```bash
-kubectl port-forward --address 0.0.0.0 --namespace test superset-xxxx-yyyy :8088 
+kubectl port-forward --address 0.0.0.0  superset-xxxx-yyyy :8088 
 ```
 
 ## Connect superset with clickhouse
