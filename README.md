@@ -98,7 +98,7 @@ $ kubectl get pods -n test | grep superset
 
 4) To expose service
 ```bash
-kubectl port-forward superset-xxxx-yyyy :8088 
+kubectl port-forward --address 0.0.0.0 --namespace test superset-xxxx-yyyy :8088 
 ```
 
 ## Connect superset with clickhouse
