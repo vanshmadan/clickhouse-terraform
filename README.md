@@ -36,7 +36,7 @@ For persistent storage configuration, add below values in values.yaml
  defaultStorageResourceRequest: 10Gi
 ```
 
-## Manual Installtion
+## Manual Installtaion
 
 If you need to customize many parameters, you can modify [values.yaml](../clickhouse-cluster-helm/values.yaml).
 
