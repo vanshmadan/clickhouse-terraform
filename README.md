@@ -1,3 +1,6 @@
+## Prerequisite
+
+
 ## Custom Configuration
 
 If you need to customize many parameters, you can modify [values.yaml](../clickhouse-cluster-helm/values.yaml).
