@@ -78,7 +78,7 @@ To expose service using port forward:
 kubectl port-forward --address 0.0.0.0 --namespace test svc/clickhouse-cluster-s0-r0 8123:8123 
 ```
 
-Superset
+## Superset
 
 1) change directory and modify the parameter values in the `values.yaml`.
 ```bash
