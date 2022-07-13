@@ -80,3 +80,6 @@ kubectl port-forward --address 0.0.0.0 --namespace test svc/clickhouse-cluster-s
 
 Superset
 
+<img width="739" alt="image" src="https://user-images.githubusercontent.com/31353777/178700418-3f965303-7e85-4f35-9ff4-2888751658bd.png">
+
+
