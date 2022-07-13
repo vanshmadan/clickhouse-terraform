@@ -60,8 +60,8 @@ kubectl get pods -n test
 
 ```bash
 $ kubectl get pods -n test | grep clickhouse
-clickHouse-replicas-0-0-0   1/1     Running   0          32m50s
-clickHouse-replicas-0-1-0   1/1     Running   0          32m50s
+clickHouse-cluster-0-0-0   1/1     Running   0          32m50s
+clickHouse-cluster-0-1-0   1/1     Running   0          32m50s
 ```
 To login to clickhouse database 
 
