@@ -66,7 +66,7 @@ clickHouse-replicas-0-1-0   1/1     Running   0          32m50s
 To login to clickhouse database 
 
 ```bash
-$ kubectl exec -it clickHouse-cluster-0-0-0 -- clickhouse-client -u clickhouse --password=c1ickh0use0perator --query='select hostName()'
+$ kubectl exec -it clickHouse-cluster-s0-r0-0 -- clickhouse-client -u clickhouse --password=c1ickh0use0perator --query='select hostName()'
 chi-ClickHouse-replicas-0-0-0
 ```
 
