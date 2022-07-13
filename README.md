@@ -59,7 +59,7 @@ kubectl get pods -n test
 **Expected output**
 
 ```bash
-$ kubectl get pods | grep clickhouse
+$ kubectl get pods -n test | grep clickhouse
 clickHouse-replicas-0-0-0   1/1     Running   0          32m50s
 clickHouse-replicas-0-1-0   1/1     Running   0          32m50s
 ```
