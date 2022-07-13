@@ -36,7 +36,7 @@ For persistent storage configuration, add below values in values.yaml
  defaultStorageResourceRequest: 10Gi
 ```
 
-## Manual Installtion
+## Manual Installation
 
 If you need to customize many parameters, you can modify [values.yaml](../clickhouse-cluster-helm/values.yaml).
 
@@ -55,5 +55,28 @@ $ helm install --generate-name <repoName>/clickhouse-cluster -n <nameSpace>\
 kubectl get pods -n test
 ```
 
+
+**Expected output**
+
+```bash
+$ kubectl get pods -n test | grep clickhouse
+clickHouse-replicas-0-0-0   1/1     Running   0          32m50s
+clickHouse-replicas-0-1-0   1/1     Running   0          32m50s
+```
+To login to clickhouse database 
+
+```bash
+$ kubectl exec -it clickHouse-cluster-s0-r0-0 -- clickhouse-client -u <username> --password=<password> --query='select hostName()'
+chi-ClickHouse-replicas-0-0-0
+```
+
+
 <img width="829" alt="image" src="https://user-images.githubusercontent.com/31353777/178678942-020fae74-b8e3-42ab-bf9c-4bd00d852812.png">
+
+To expose service using port forward:
+```bash
+kubectl port-forward --address 0.0.0.0 --namespace test svc/clickhouse-cluster-s0-r0 8123:8123 
+```
+
+Superset
 
