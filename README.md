@@ -60,13 +60,13 @@ kubectl get pods -n test
 
 ```bash
 $ kubectl get pods -n test | grep clickhouse
-clickHouse-cluster-s0-r0-0   1/1     Running   0          32m50s
-clickHouse-cluster-s0-r1-0   1/1     Running   0          32m50s
+clickhouse-cluster-s0-r0-0   1/1     Running   0          32m50s
+clickhouse-cluster-s0-r1-0   1/1     Running   0          32m50s
 ```
 To login to clickhouse database 
 
 ```bash
-$ kubectl exec -it clickHouse-cluster-s0-r0-0 -- clickhouse-client -u <username> --password=<password> --query='select hostName()'
+$ kubectl exec -it clickhouse-cluster-s0-r0-0 -- clickhouse-client -u <username> --password=<password> --query='select hostName()'
 chi-ClickHouse-replicas-0-0-0
 ```
 
