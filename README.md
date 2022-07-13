@@ -25,3 +25,9 @@ If you need to customize many parameters, you can modify [values.yaml](../clickh
 $ helm install --generate-name <repoName>/clickhouse-cluster -n <nameSpace>\
   -f /<path>/to/values.yaml
 ```
+
+## 
+```bash
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
+```
